@@ -3,35 +3,69 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+  <title>Great Woof Lodge</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
 </head>
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+      <a id="logo-container" href="#" class="brand-logo">Great Woof Lodge</a>
+      <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">Home made Dog Food</a></li>
+          <li><a href="#!">Pick-up/Drop Off</a></li>
+          <li><a href="#!">Drop-in Visit</a></li>
+          <li><a href="#!">Dog Boarding</a></li>
+          <li><a href="#!">Dog Walking</a></li>
       </ul>
+      
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+
+        <div class="nav-wrapper">
+
+
+            <ul class="right hide-on-med-and-down">
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <ul class="right hide-on-med-and-down">
+                  <li><a href="#">Gallery</a></li>
+              </ul>
+              <ul class="right hide-on-med-and-down">
+                  <li><a href="#">About</a></li>
+              </ul>
+
+              <ul id="nav-mobile" class="sidenav">
+                  <li><a href="#">Navbar Link</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li class="divider"></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        </div>
+
+
+
+
     </div>
   </nav>
 
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="parallax-container wlhome">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+        <h1 class="header center teal-text text-lighten-2">Woof Lodge</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">Their Home Away From Home</h5>
         </div>
         <div class="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
@@ -40,7 +74,7 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="dogPlay.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -51,7 +85,7 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h2 class="center brown-text"><i class="material-icons">pets</i></h2>
             <h5 class="center">Speeds up development</h5>
 
             <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
@@ -69,7 +103,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h2 class="center brown-text"><i class="material-icons">pets</i></h2>
             <h5 class="center">Easy to work with</h5>
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
@@ -115,7 +149,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="goodboy.jpg" id = "p1" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer teal">
@@ -159,6 +193,16 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".dropdown-trigger").dropdown(
+        {hover: true,
+        coverTrigger: false}
+      );
+    });
+      
+    
+  </script>
 
   </body>
 </html>
