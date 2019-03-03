@@ -20,12 +20,13 @@ app.use(express.json());
 
 // Static directory
 app.use(express.static("public"));
+app.use(express.static("parallax-template"));
 
 // Routes
 // =============================================================
 require("./routes/html-routes.js");
 require("./routes/customer-api-routes.js");
-require("./routes/dogs-api-routes.js");
+require("./routes/dog-api-routes.js");
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
