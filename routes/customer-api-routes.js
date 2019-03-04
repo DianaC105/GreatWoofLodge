@@ -9,7 +9,7 @@ module.exports = function(app) {
         });
     });
 
-    app.get("api/customer/:id", function(req, res) {
+    app.get("/api/customer/:id", function(req, res) {
         db.Customer.findOne({
             where: {
                 id: req.params.id
@@ -20,14 +20,25 @@ module.exports = function(app) {
         });
     });
 
-    app.post("api/customer", function(req, res) {
-        db.Customer.create(req.body).then(function(dbCustomer) {
+    app.post("/api/customer", function(req, res) {
+        db.Customer.create({
+            customer_name: req.body.customer_name,
+            password: req.body.password,
+            email: req.body.email,
+            street: req.body.street,
+            city: req.body.city,
+            state: req.body.state,
+            zip: req.body.zip,
+            pet_name: req.body.pet_name,
+            breed: req.body.breed
+        }).then(function(dbCustomer) {
             res.json(dbCustomer);
+            console.log(dbCustomer);
             
         });
     });
 
-    app.delete("api/customer/:id", function(req, res) {
+    app.delete("/api/customer/:id", function(req, res) {
         db.Customer.destroy({
             where: {
                 id: req.params.id
