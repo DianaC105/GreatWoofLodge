@@ -1,7 +1,15 @@
 .container {
-    padding-top: 100px;
-    margin: 30%;
-    border-color: greenyellow;
+    padding-top: 50px;
+    /* margin:  ; */
+    padding: greenyellow;
     border: 30%;
 
 }
+
+/* body {
+    background-image: url("../images/formBackground.jpg");
+    
+    background-size: cover;
+    /* background-color: blue 
+
+  } 
