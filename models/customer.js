@@ -9,8 +9,7 @@ module.exports = function(sequelize, DataTypes) {
         zip: DataTypes.INTEGER,
         pet_name: DataTypes.STRING,
         breed: DataTypes.STRING,
-        service: DataTypes.STRING,
-        needs: DataTypes.STRING
+        comments: DataTypes.STRING
     });
 
     Customer.associate = function(models) {
