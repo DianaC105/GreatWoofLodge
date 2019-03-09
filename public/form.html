@@ -26,9 +26,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body  class="form-back">
 <!--Form Control-->
-<div class = "background">
+<div class = "background " >
 <div class = "container col-md-9 bimage">
     <form class="needs-validation novalidate">
         <div class="form-row">
@@ -70,17 +70,16 @@
                             
               <div class="form-check">
                 <label>
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <input id="indeterminate-checkbox" type="checkbox" />
-                    <span>YES</span>
-                  </label>
+                    <label>
+                        <input id="indeterminate-checkbox" type="checkbox" />
+                        <span>YES</span>
+                      </label>
               </div>
           <div class="form-check">
-            <label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-              <input id="indeterminate-checkbox" type="checkbox" />
-              <span>NO</span>
-            </label>
+              <label>
+                  <input id="indeterminate-checkbox" type="checkbox" />
+                  <span>NO</span>
+                </label>
           </div>
           </div>
         </div>
@@ -90,8 +89,7 @@
           <label for="validationTooltip01">Is your pet CREATE TRAINED?</label>
                       
             <div class="form-check">
-              <label>
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label>
                     <input id="indeterminate-checkbox" type="checkbox" />
                     <span>YES</span>
                   </label>
@@ -99,9 +97,9 @@
         <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
         <label>
-          <input id="indeterminate-checkbox" type="checkbox" />
-          <span>NO</span>
-        </label>
+            <input id="indeterminate-checkbox" type="checkbox" />
+            <span>NO</span>
+          </label>
         </div>
       </div>
     </div>
@@ -120,18 +118,18 @@
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
                             <label>
-                              <input id="indeterminate-checkbox" type="checkbox" />
-                              <span>NO</span>
-                            </label>
+                                <input id="indeterminate-checkbox" type="checkbox" />
+                                <span>NO</span>
+                              </label>
                           </div>
 
-                            <div class="col-md-4 mb-3">
+                            <!-- <div class="col-md-4 mb-3">
                                     <label for="validationTooltip02">If yes, which database?</label>
                                     <input type="text" class="form-control" id="validationTooltip02" placeholder="Microship Database" >
                                     <div class="valid-tooltip">
                                       Looks good!
                                     </div>
-                                  </div>
+                                  </div> -->
                           
     </div>
 </div>
@@ -140,7 +138,7 @@
       <label for="validationTooltip01">Is your pet MICROCHIPPED?</label>
         <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          <label>
+        <label>
             <input id="indeterminate-checkbox" type="checkbox" />
             <span>YES</span>
           </label>
@@ -151,6 +149,8 @@
       <input id="indeterminate-checkbox" type="checkbox" />
         <span>NO</span>
     </label>
+</div>
+</div>
 </div>
 
 <div class="col-md-4 mb-3">
@@ -171,14 +171,140 @@
                                     </label>
                                   </div>
                       <div class="form-group">
+                            <label for="exampleFormControlTextarea1">If so, please list :</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+</div>
+
+
+<div class="col-md-4 mb-3">
+  <label for="validationTooltip01">Does your pet take any medications for the allergies listed (if any) above?</label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label>
+            <label>
+                                        <input id="indeterminate-checkbox" type="checkbox" />
+                                        <span>YES</span>
+                                      </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                                    <label>
+                                      <input id="indeterminate-checkbox" type="checkbox" />
+                                      <span>NO</span>
+                                    </label>
+                                  </div>
+                      <div class="form-group">
                             <label for="exampleFormControlTextarea1">If so, please list medications:</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                           </div>
 </div>
+
+<div class="form-row">
+  <div class="col-md-4 mb-3">
+    <label for="validationTooltip01">Food Brand?</label>
+      <input type="text" class="form-control" id="validationTooltip01" placeholder="Food Brand" required>
+      <div class="valid-tooltip">
+          Looks good!
+      </div>
+    </div>
+<div class="col-md-4 mb-3">
+  <label for="validationTooltip02">Amount?</label>
+      <input type="text" class="form-control" id="validationTooltip02" placeholder="Amount to be feed" required>
+      <div class="valid-tooltip">
+          Looks good!
+    </div>
+  </div>
+</div>
+<div class="form-row">
+  <div class="col-md-4 mb-3">
+    <label for="validationTooltip01">Frequency?</label>
+      <input type="text" class="form-control" id="validationTooltip01" placeholder="Frequency" required>
+      <div class="valid-tooltip">
+                Looks good!
+      </div>
+    </div>
+<div class="col-md-4 mb-3">
+  <label for="validationTooltip02">Vet Information (if desired)</label>
+    <input type="text" class="form-control" id="validationTooltip02" placeholder="Vet Info" >
+      <div class="valid-tooltip">
+                Looks good!
+      </div>
 </div>
 </div>
-    
-            <button class="btn btn-primary" type="submit">Submit form</button>
+
+<div class="form-row">
+  <div class="col-md-4 mb-3">
+      <div class="form-group">
+          <label for="exampleFormControlSelect1">Please select one: </label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Dry food only</option>
+            <option>With Water</option>
+
+          </select>
+        </div> 
+      </div>
+    </div>
+
+  
+        <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1"> Supplements :</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+          </div>
+        </div>
+  
+
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationTooltip01">Feed Time A.M.: </label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="A.M." required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+              </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip02">Feed Time P.M.:</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="P.M." required>
+                <div class="valid-tooltip">
+                    Looks good!
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+              <div class="col-md-4 mb-3">
+                  <div class="form-group">
+                      <label for="exampleFormControlSelect1">What is your pet's energy level (pick one): </label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>High</option>
+                        <option>Moderate</option>
+                        <option>Calm</option>
+                        <option>Lethargic</option>
+                        <option>Combination</option>
+                      </select>
+                    </div> 
+                  </div>
+                </div>
+
+                <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Additional Comments "></textarea>
+    </div>
+
+
+
+
+
+
+</div> 
+</div>
+    <!-- Sign in button -->
+    <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Sign in</button>
+
+            <!-- <button class="btn btn-primary" type="submit">Submit form</button> -->
     </form>
   </div>
 </div>
