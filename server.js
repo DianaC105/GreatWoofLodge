@@ -24,9 +24,14 @@ app.use(express.static("parallax-template"));
 
 // Routes
 // =============================================================
-require("./routes/html-routes.js");
-require("./routes/customer-api-routes.js");
-require("./routes/dog-api-routes.js");
+
+require("./routes/html-routes.js")(app);
+require("./routes/customer-api-routes.js")(app);
+
+
+// require("./routes/html-routes.js");
+// require("./routes/customer-api-routes.js");
+// require("./routes/dog-api-routes.js");
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
