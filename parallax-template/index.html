@@ -6,36 +6,31 @@
   <title>Great Woof Lodge</title>
 
   <!-- CSS  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
 </head>
+
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Great Woof Lodge</a>
       <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!">Home made Dog Food</a></li>
-          <li><a href="#!">Pick-up/Drop Off</a></li>
-          <li><a href="#!">Drop-in Visit</a></li>
+          <li><a href="/parallax-template/food.html">Home made Dog Food</a></li>
+          <li><a href="/parallax-template/dropIn.html">Pick-up/Drop Off</a></li>
+          <li><a href="/parallax-template/dropInVisits.html">Drop-in Visit</a></li>
           <li><a href="#!">Dog Boarding</a></li>
-          <li><a href="#!">Dog Walking</a></li>
+          <li><a href="/parallax-template/walking.html">Dog Walking</a></li>
       </ul>
-      
-
-
-
-
         <div class="nav-wrapper">
-
-
             <ul class="right hide-on-med-and-down">
               <!-- Dropdown Trigger -->
               <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
               <ul class="right hide-on-med-and-down">
                   <li><a href="#">Gallery</a></li>
@@ -45,20 +40,23 @@
               </ul>
 
               <ul id="nav-mobile" class="sidenav">
-                  <li><a href="#">Navbar Link</a></li>
-                  <li><a href="#">Services</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Contact</a></li>
                   <li class="divider"></li>
+                  <li><a href="#"><strong>Services: </strong></a></li>
+                  <li><a href="#!">Home made Dog Food</a></li>
+                  <li><a href="#!">Pick-up/Drop Off</a></li>
+                  <li><a href="#!">Drop-in Visit</a></li>
+                  <li><a href="#!">Dog Boarding</a></li>
+                  <li><a href="#!">Dog Walking</a></li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
         </div>
-
-
-
-
     </div>
   </nav>
 
+                                  <!-- Banner One -->
   <div id="index-banner" class="parallax-container wlhome">
     <div class="section no-pad-bot">
       <div class="container">
@@ -74,11 +72,11 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="dogPlay.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="/dogPlay.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
-  <div class="container">
+  <div class="container">                   <!-- Services Section One -->
     <div class="section">
 
       <!--   Icon Section   -->
@@ -86,27 +84,52 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">pets</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h5 class="center">Home Made Dog Food</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="center light">Duration varies • Price varies</p>
+            <p class="center light">Home made, well balanced diet for your pet. Contact me to Discuss Your Pets Needs</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">pets</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h5 class="center">Pick-up/Drop-off</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="center light">Duration varies • Starts at $22</p>
+            <p class="center light">Price will vary - please contact me to discuss</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">pets</i></h2>
+            <h5 class="center">Dro-in Visits</h5>
+
+            <p class="center light">20 minutes • $18/Visit</p>
+            <p class="center light">This is a general check in with your pet. Make sure they have water and feeding (if applicable); some belly rub time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icon">pets</i></h2> 
+            <h5 class="center">Dog Boarding</h5>
+
+            <p class="center light">Duration varies • $40/Day/Night</p>
+            <p class="center light">Your dog will be in our home where they will receive all the love and care we have to offer</p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icon">pets</i></h2> 
+            <h5 class="center">Dog Walking</h5>
+
+            <p class="center light">30 minutes • $20/walk</p>
+            <p class="center light">Walks are 30 Minutes Long. We can run if your dog needs to burn more energy.</p>
           </div>
         </div>
       </div>
@@ -114,17 +137,18 @@
     </div>
   </div>
 
+                                            <!-- Banner Two -->
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h5 class="header col s12 light">## Place Holder Text ##</h5>
+          </div>
         </div>
       </div>
+      <div class="parallax"><img src="cute-three-little-white-puppies-sleeping-together1.jpg" alt="Unsplashed background img 2"></div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
 
   <div class="container">
     <div class="section">
@@ -145,7 +169,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">## Place Holder Text ##</h5>
         </div>
       </div>
     </div>
@@ -155,35 +179,33 @@
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        <div class="col l4 s12">
+          <h5 class="white-text">Contact Info</h5>
+          <p class="grey-text text-lighten-4">Reach out to us!</p>
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+        <div class="col l5 s12">
+          <h5 class="white-text"></h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Email: </a></li>
+            <li><a class="white-text">Phone #: (908) 409-3422</a></li>
+            <li><a class="white-text" href="#!">Address: </a></li>
+            <li><a class="white-text" href="#!">Hours: </a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="https://www.facebook.com/GreatWoofLodge/"><i class="fab fa-facebook-square"></i> Facebook</a></li>
             <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by <a class="yellow-text text-lighten-3" href="https://github.com/DianaC105/GreatWoofLodge">just the best group ever.jpg</a>
       </div>
     </div>
   </footer>

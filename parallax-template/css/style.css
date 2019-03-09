@@ -61,10 +61,17 @@ footer.page-footer {
 h1{
   font-family: 'Fredericka the Great', cursive;
 }
+h4{
+  font-family: 'Fredericka the Great', cursive;
+}
 .wlhome{
   background-color: rgba(1,1,1,0.3);
 }
 
 .parallax img{
   width:100%;
+}
+.messagecont{
+  margin-top:40px;
+  margin-bottom: 60px;
 }

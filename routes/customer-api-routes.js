@@ -20,18 +20,18 @@ module.exports = function(app) {
         });
     });
 
-    app.post("/api/customer", function(req, res) {
+    app.post("/api/new", function(req, res) {
         console.log(req.body)
         db.Customer.create({
             customer_name: req.body.customer_name,
-            password: req.body.password,
             email: req.body.email,
+            password: req.body.password,
+            phone: req.body.phone,
             street: req.body.street,
             city: req.body.city,
             state: req.body.state,
             zip: req.body.zip,
             pet_name: req.body.pet_name,
-            breed: req.body.breed,
             comments: req.body.comments
         }).then(function(dbCustomer) {
             res.json(dbCustomer);
